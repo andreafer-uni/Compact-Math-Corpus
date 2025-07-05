@@ -1,0 +1,9 @@
+Metric,Value
+Total Tokens,247341
+Total Sentences,12517
+Unique Words,4319
+Average Sentence Length,19.760405848046656
+Average Word Length,4.40876753078376
+POS Frequencies,"{'PROPN': 7311, 'NOUN': 33962, 'SPACE': 26150, 'DET': 18514, 'ADJ': 12171, 'PUNCT': 40646, 'ADP': 16459, 'NUM': 21890, 'X': 2126, 'SYM': 2057, 'AUX': 12527, 'VERB': 18305, 'PART': 3583, 'ADV': 7711, 'CCONJ': 5221, 'SCONJ': 5593, 'PRON': 12982, 'INTJ': 133}"
+Dependency Frequencies,"{'compound': 5837, 'ROOT': 12517, 'dep': 26907, 'det': 18393, 'amod': 8524, 'appos': 4750, 'punct': 42889, 'nmod': 1174, 'conj': 6103, 'prep': 15916, 'pobj': 14394, 'nummod': 9121, 'case': 16, 'nsubjpass': 819, 'auxpass': 905, 'aux': 6921, 'advcl': 3201, 'dobj': 10181, 'advmod': 9219, 'cc': 5623, 'nsubj': 15091, 'neg': 1292, 'mark': 3780, 'attr': 4238, 'relcl': 2058, 'xcomp': 1611, 'npadvmod': 2489, 'poss': 849, 'pcomp': 911, 'prt': 415, 'preconj': 198, 'acomp': 2766, 'ccomp': 3606, 'acl': 816, 'parataxis': 177, 'oprd': 194, 'expl': 820, 'quantmod': 544, 'dative': 190, 'meta': 1102, 'csubj': 269, 'intj': 110, 'agent': 180, 'predet': 224, 'csubjpass': 1}"
+Top Informative Terms,"[('number', 995), ('set', 678), ('graph', 666), ('sequence', 660), ('true', 624), ('numbers', 454), ('find', 451), ('statement', 435), ('vertices', 432), ('example', 397), ('prove', 364), ('function', 358), ('elements', 349), ('relation', 344), ('sets', 336), ('use', 330), ('edges', 318), ('element', 311), ('proof', 310), ('consider', 309)]"
