@@ -1,0 +1,9 @@
+Metric,Value
+Total Tokens,697806
+Total Sentences,37651
+Unique Words,9020
+Average Sentence Length,18.533531645905818
+Average Word Length,4.286660304425639
+POS Frequencies,"{'ADJ': 30794, 'PROPN': 48341, 'SPACE': 91048, 'CCONJ': 15438, 'ADP': 45220, 'NUM': 60436, 'PUNCT': 111722, 'AUX': 31875, 'VERB': 37993, 'DET': 56176, 'NOUN': 100042, 'PRON': 18723, 'PART': 6750, 'ADV': 16363, 'SYM': 5372, 'X': 7194, 'SCONJ': 14028, 'INTJ': 291}"
+Dependency Frequencies,{'': 697806}
+Top Informative Terms,"[('set', 1634), ('number', 1529), ('matrix', 1435), ('let', 1261), ('b', 1188), ('c', 1051), ('prove', 975), ('vector', 939), ('r', 933), ('group', 926), ('example', 925), ('space', 857), ('find', 802), ('true', 797), ('numbers', 724), ('linear', 723), ('elements', 717), ('sequence', 713), ('graph', 687), ('element', 665)]"
