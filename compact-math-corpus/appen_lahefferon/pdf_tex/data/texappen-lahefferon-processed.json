@@ -1,0 +1,436 @@
+{
+  "sentences": [
+    "CHAPTER: APPENDIX\n\ntocchapter Appendix\nMathematics is made of arguments (reasoned discourse that is,\nnot crockery-throwing).",
+    "This section sketches the background material and \nargument techniques that we use in the book.",
+    "This section informally outlines the topics, skipping proofs.",
+    "For more, <cit.> is excellent.",
+    "Two other sources, available online, are\n<cit.> and <cit.>.",
+    "Statements\n\n\n\nFormal mathematical statements come labelled as a \nTheorem \nfor major points,\na Corollary \nfor results that follow immediately from\na prior one, or a\nLemma \nfor results chiefly used to prove others.",
+    "Statements can be complex and have many parts.",
+    "The truth or falsity of the entire statement depends both on the\ntruth value of the parts and on how the statement is\nput together.",
+    "Not\nWhere P is a proposition,\n`it is not the case that P' is true provided that P is\nfalse.",
+    "For instance, `n is not prime' is true only when n is the\nproduct of smaller integers.",
+    "To prove that a `not P' statement holds, show that P is false.",
+    "And\nFor a statement  of the form `P and Q'\nto be true both halves must hold:\n`7 is prime and so is 3' is true, while\n`7 is prime and 3 is not' is false.",
+    "To prove a `P and Q', prove each half.",
+    "Or\nA `P or Q' statement is true when either half holds:\n`7 is prime or 4 is prime' is true, while `8 is prime\nor 4 is prime' is false.",
+    "In the case that both clauses of the statement are true, \nas in `7 is prime or 3 is prime',\nwe take the statement as a whole to be true.",
+    "(In everyday speech people occasionally use `or' in an \nexclusive way“Live\nfree or die” does not intend both halves to holdbut\nwe will not use `or' in that way.)\n\nTo prove `P or Q', show that in all cases at least one\nhalf holds (perhaps sometimes one half and sometimes the other,\nbut always at least one).",
+    "If-then\n\nAn `if P then Q' statement may also appear as\n`P implies Q' or `P Q' or \n`P is sufficient to give Q' or `Q if P'.",
+    "It \nis true unless P is true while Q is false.",
+    "Thus `if 7 is prime then 4 is not' is true \nwhile `if 7 is prime then 4 is also prime' is false.",
+    "(Contrary to its\nuse in casual speech, in mathematics `if P then Q' \ndoes not connote that\nP precedes Q or causes Q.)\n\nNote this consequence of the prior paragraph: \nif P is false then `if P then Q' is\ntrue irrespective of the value of Q:\n`if 4 is prime then 7 is prime' and\n`if 4 is prime then 7 is not' are both true statements.",
+    "(They are vacuously true.)\nAlso observe that `if P then Q' is true when Q is true: \n`if 4 is prime then 7 is prime' and \n`if 4 is not prime then 7 is prime' are both true.",
+    "There are two main ways to establish an implication.",
+    "The first way is direct: assume that P is true and use that\nassumption to prove Q.",
+    "For instance,\nto show `if a number is divisible by 5 then twice that\nnumber is divisible by 10' we can assume that the number is 5n and\ndeduce that 2(5n)=10n.",
+    "The indirect way is to prove the \ncontrapositive\nstatement: `if Q is false then P is false'\n(rephrased, `Q can only be false when P is also false').",
+    "Thus to show `if a natural number is prime then it\nis not a perfect square' we can \nargue that if it were a square p=n^2 then it could be\nfactored p=n· n where n<p and so wouldn't be prime\n(p=0 or p=1 don't satisfy n<p but they\nare nonprime).",
+    "Equivalent statements\n\nSometimes, not only does P imply Q but\nalso Q implies P.",
+    "Some ways to say this are:\n`P if and only if\nQ', `P iff Q', `P and Q are logically\nequivalent', `P is necessary and sufficient to give Q',\n`P Q'.",
+    "An example is `an integer is divisible by ten if and only if  \nthat number ends in 0'.",
+    "Although in simple arguments a chain like \n“P if and only if R, which holds if and only if S …”\nmay be practical, to prove that statements are equivalent we more often\nprove the two halves\n`if P then Q' and `if Q then P' separately.",
+    "Quantifiers\nCompare these statements about natural numbers:\n`there is a natural number x such that x is\ndivisible by x^2' is true, while\n`for all natural numbers x, \nthat x is divisible by x^2' is false.",
+    "The prefixes `there is' and `for all' \nare quantifiers.",
+    "For all\nThe `for all' prefix is the \nuniversal quantifier, \nsymbolized ∀.",
+    "The most straightforward way to prove that \na statement holds in all cases is to \nprove that it holds in each case.",
+    "Thus to show that `every number divisible by p has its\nsquare divisible by p^2', take a single number of the form\npn and square it (pn)^2=p^2n^2.",
+    "This is a typical element proof.",
+    "(In this kind of argument be careful not to assume \nproperties for that element\nother than the ones in the hypothesis.",
+    "This argument is wrong:\n“If n is divisible by a prime, say 2, so that n=2k\nfor some natural number k,\nthen n^2=(2k)^2=4k^2 and the square of n is divisible\nby the square of the prime.”\nThat is a proof for the special case p=2 \nbut it isn't a proof for all p.",
+    "Contrast it with a correct one:\n“If n is divisible by a prime\nso that n=pk for some natural number k\nthen n^2=(pk)^2=p^2k^2 and so the square of n is divisible\nby the square of the prime.”)\n\n\n\n\nThere exists\nThe `there exists' prefix is the \nexistential quantifier,\nsymbolized \n∃.",
+    "We can prove\nan existence proposition by producing something satisfying\nthe property: for instance, to settle the question of primality of\n2^2^5+1, Euler exhibited the divisor 641<cit.>.",
+    "But there are proofs\nshowing that something exists without saying how to find it;\nEuclid's argument given in the next subsection\nshows there are infinitely many primes without giving a formula naming them.",
+    "Finally, after\n“Are there any?” \nwe often ask “How many?”\nThat is, the question of uniqueness often arises in conjunction\nwith the question of existence.",
+    "Sometimes the two arguments are simpler if separated so note that just as\nproving something exists does not show that it is unique,\nneither does proving that something is unique show that it exists.",
+    "Techniques of Proof\n\nWe have many ways to prove mathematical statements.",
+    "Here we will outline two techniques that we use often, and that\nmight not come naturally, even to a person with a technical \nturn of mind.",
+    "Induction\n\nMany proofs are iterative,\n“Here's why the statement is true for the number 0, \nit then follows for 1 and from there to 2 …”.",
+    "These are proofs by \nmathematical induction.",
+    "We will see two examples.",
+    "We will first prove that 1+2+3+…+n=n(n+1)/2.",
+    "That formula has a natural number variable n\nthat is free, meaning that setting n to be 1,\nor 2, etc., gives a family of cases of the statement:\nfirst that 1=1(2)/2, second that 1+2=2(3)/2, etc.",
+    "Our induction proofs involve statements with one free natural number \nvariable.",
+    "Each such proof has two steps.",
+    "In the base step\nwe show that the statement holds for\nsome intial number i∈.",
+    "Often this step is a routine verification.",
+    "The second step, \nthe inductive step,\nis more subtle; we will show that this implication holds:\n\n    If the statement holds from n=i up to and including n=k\n     then the statement holds also in the n=k+1 case*\n\n(the first line is the \ninductive hypothesis).",
+    "Completing both steps proves that the statement is\ntrue for all natural numbers greater than or equal to i.",
+    "For the sum of the initial n numbers statement  \nthe intuition behind the principle is that first, the base step directly \nverifies the statement for the case of the initial number n=1.",
+    "Then, because the inductive step verifies the implication (*)\nfor all k, that implication applied to k=1\ngives that the statement is true for the case of the number\nn=2.",
+    "Now, with the statement established for both 1 and 2, \napply (*) again to conclude that the statement is true for the number\nn=3.",
+    "In this way, we bootstrap to all numbers n≥ 1.",
+    "Here is a proof of 1+2+3+…+n=n(n+1)/2, \nwith separate paragraphs for the base step \nand the inductive step.",
+    "For the base step we show that the formula holds when n=1.",
+    "That's easy; the sum of the first 1 natural number equals \n1(1+1)/2.",
+    "For the inductive step, assume the inductive hypothesis that the formula holds\nfor the numbers n=1, n=2, …, n=k with k≥ 1.",
+    "That is, assume  \n1=1(1)/2, and 1+2=2(3)/2, and 1+2+3=3(4)/2, through  \n1+2+⋯+k=k(k+1)/2.",
+    "With that, the formula holds also in the n=k+1 case:\n\n    1+2+⋯+k+(k+1)\n      =\n      k(k+1)/2+(k+1)\n      =\n      (k+1)(k+2)/2\n\n(the first equality follows from the inductive hypothesis).",
+    "Here is another example, proving\nthat every integer greater than or equal to 2 is a product\nof primes.",
+    "The base step is easy: 2 is the product of a single prime.",
+    "For the inductive step assume that each of 2, 3,… ,k is a\nproduct of primes, aiming to show k+1 is also a product of\nprimes.",
+    "There are two possibilities.",
+    "First, if k+1 is not divisible by a number smaller than itself then it\nis a prime and so is the product of primes.",
+    "The second possibility is that k+1 is divisible by a number\nsmaller than itself, and then  by the inductive hypothesis its\nfactors can be written as a product of primes.",
+    "In either case\nk+1 can be rewritten as a product of primes.",
+    "Contradiction\n\nAnother technique of proof is\nto show that something is true by showing that it cannot be false.",
+    "A proof by contradiction assumes that the proposition is\nfalse and derives some contradiction to known facts.",
+    "The classic example of proof by contradiction is Euclid's\nargument that there are infinitely many primes.",
+    "Suppose that there are only finitely many primes p_1,…,p_k.",
+    "Consider the number p_1· p_2… p_k +1.",
+    "None of the primes on the supposedly exhaustive list divides this number\nevenly since each leaves a remainder of 1.",
+    "But every number is a product of primes so this can't be.",
+    "Therefore there cannot be only finitely many primes.",
+    "Another example is this proof that\n√(2) is not a rational number.",
+    "Suppose that  √(2)=m/n, so that 2n^2=m^2.",
+    "Factor out any 2's, giving\nn=2^k_n·n̂\nand\nm=2^k_m·m̂.",
+    "Rewrite.",
+    "2· (2^k_n·n̂)^2\n      =\n      (2^k_m·m̂)^2\n\nThe Prime Factorization Theorem says that there must be the same number of\nfactors of 2 on both sides, but there are an odd number of them\n1+2k_n on the left and an even number 2k_m on the right.",
+    "That's a contradiction, so a rational number with a square of\n2 is impossible.",
+    "Sets, Functions, and Relations\nThe material here forms the backdrop, the vocabulary,\nfor all of the development that we do.",
+    "Sets\n\nMathematicians often work with collections.",
+    "The most commonly-used kind of collection is a set.",
+    "Sets are characterized by the Principle of Extensionality: \ntwo sets with the same elements are equal.",
+    "Because of this, the order of the elements does not matter \n2,π=π,2, \nand\nrepeats collapse 7,7=7.",
+    "We can describe a set using a listing between curly braces\n1,4,9,16 (as in the prior paragraph), \nor by using set-builder notation\nx x^5-3x^3+2=0 (read “the set of all x\nsuch that …”).",
+    "We name sets with capital roman letters; for instance the set of primes is\nP=2,3,5,7,11,… (except that a few sets \nare so important that their names are reserved, such as the\nreal numbers \nand the complex numbers ).",
+    "To denote that something is an \nelement, \nor member,) of a set we\nuse `∈',\nso that 7∈3,5,7 while 8∉3,5,7.",
+    "We say that A is a subset of B, written\nA⊆ B, when x∈ A implies that x∈ B.",
+    "In this book we use\n`⊂' for the proper subset \nrelationship that A is a subset of B but A≠ B\n(some authors use this symbol for any kind of subset, proper or not).",
+    "An example is \n2,π⊂2,π,7.",
+    "These symbols may be flipped, for instance\n2,π,5⊃2,5.",
+    "Because of Extensionality, to prove that two sets are equal A=B\nshow that they have the same members.",
+    "Often we do this by showing mutual inclusion,\n\nthat both A⊆ B and A⊇ B.",
+    "Such a proof will have a part showing that if x∈ A then x∈ B,\nand a second part showing that if x∈ B then x∈ A.",
+    "When a set has no members then it is\nthe empty set ,\nsymbolized ∅.",
+    "Any set has the empty set for a subset by the `vacuously true'\nproperty of the definition of implication.",
+    "Diagrams\nWe picture basic set operations with a\nVenn diagram.",
+    "This shows x∈ P.",
+    "< g r a p h i c s >\n\n\n\nThe outer rectangle contains the universe Ω of all objects under \ndiscussion.",
+    "For instance, in a statement about real numbers, the rectangle encloses all \nmembers of .",
+    "The set is pictured as a circle, enclosing its members.",
+    "Here is the diagram for P⊆ Q.",
+    "It shows that if x∈ P then x∈ Q.",
+    "< g r a p h i c s >\n\n\n\n\n\n\n\nSet Operations\nThe union of two sets is\nP Q=x(x∈ P) or (x∈ Q).",
+    "The diagram shows that an element is in the union if it is in either of the\nsets.",
+    "< g r a p h i c s >\n\n\n\nThe intersection is\nP Q=x(x∈ P) and (x∈ Q).",
+    "< g r a p h i c s >\n\n\n\nThe \ncomplement \nof a set P is\nP^comp=x∈Ω x∉P\n\n\n  \n    < g r a p h i c s >\n\n\n\n\n\n\n\nMultisets\nAs described above, a set is a collection in which \norder does not matter, so that the sets 2,π\nand π,2 are equal,\nand in which repeats collapse, so that the sets\n7,7 and 7 are equal.",
+    "A collection that is like a set in that order does not matter,\nbut in which repeats do not collapse, is a multiset.",
+    "(Note that we use the same \ncurly brackets notation  … as for sets.)\nThus the multiset 1,2,2 differs from the multiset\n1,2.",
+    "Because order does not matter, these multisets are all \nequal: 1,2,2, 2,1,2, and 2,2,1.",
+    "In this text we only mention multisets in a remark so going into  \nhow to do subsets, unions, or intersections, is beyond our scope.",
+    "Sequences\n\nIn addition to sets and multisets,\nwe also use collections where order matters and where repeats do\nnot collapse.",
+    "These are sequences, denoted with angle brackets:\n2,3,7≠2,7,3.",
+    "A sequence of length 2 is an \nordered pair,\nand is often written with parentheses: (π,3).",
+    "We also sometimes say `ordered triple', `ordered 4-tuple', etc.",
+    "The set of ordered n-tuples of elements of a set A is denoted\nA^n.",
+    "Thus ^2 is the set of pairs of reals.",
+    "Functions\n\nA function\nor map  f DC is \nis an association between input\narguments \nx∈ D\nand output\nvalues,\nf(x)∈ C subject to the requirement \nthat the\nfunction must be well-defined,\n\nthat x suffices to determine f(x).",
+    "Restated, the condition is that\nif x_1=x_2 then f(x_1)=f(x_2).",
+    "The set of all arguments D is f's \ndomain\nand the set of output values is its \nrange f.",
+    "Often we don't work with the range and instead\nwork with a convenient superset, the\ncodomain C.",
+    "For instance, we might describe the squaring function with s\ninstead of s^+0.",
+    "We picture functions with a \nbean diagram.",
+    "< g r a p h i c s >\n\n\n\nThe blob on the left is the domain while on the right is the\ncodomain.",
+    "The function associates the three points of the domain with three in the\ncodomain.",
+    "Note that by the definition of a function \nevery point in the domain is associated with\na unique point in the codomain, but the converse needn't be true.",
+    "The association is arbitrary; no formula or algorithm is required, although in\nthis book there typically is one.",
+    "We often use y to denote f(x).",
+    "We also use the notation xf 16x^2-100, read\n`x maps under f to 16x^2-100' or\n`16x^2-100 is the \nimage \nof x'.",
+    "A map such as x↦sin(1/x) is a\ncombinations of simpler maps, here\ng(y)=sin(y) applied to the image of f(x)=1/x.",
+    "The composition \nof g YZ with f XY,\nis the map sending\nx∈ X to g(  f(x) )∈ Z.",
+    "It is denoted gf XZ.",
+    "This definition only makes sense if the range of f is a\nsubset of the domain of g.",
+    "An \nidentity map \nYY defined by\n(y)=y has the property that for any f XY,\nthe composition f is equal to f.",
+    "So an identity map plays the same role with respect to function composition\nthat the number 0 plays in real number addition or that \n1 plays in multiplication.",
+    "In line with that analogy, we define a\nleft inverse of a map \nf XY to be a\nfunction grange(f)X such that gf\nis the identity map on X.",
+    "A right inverse \nof f is a\nh YX such that fh is the identity.",
+    "For some f's there is a map that is \nboth a left and right inverse of f.",
+    "If such a map exists then it is unique because if both g_1 and\ng_2 have this property then\ng_1(x)=g_1 (fg_2)  (x)\n         = (g_1f) g_2 (x)\n         =g_2(x)\n(the middle equality comes from the associativity of function composition)\nso we call it a two-sided inverse or just  \n“the” inverse,\nand denote it f^-1.",
+    "For instance, the inverse of the function f\ngiven by f(x)=2x-3 is the function f^-1\ngiven by f^-1(x)=(x+3)/2.",
+    "The superscript notation for function inverse `f^-1' \nfits into a larger scheme.",
+    "Functions with the same codomain as domain f XX can be iterated,\nso that we can consider\nthe composition of f with itself: ff, \nand fff, etc.",
+    "We \nwrite ff as f^2 and \nfff as f^3, etc.",
+    "Note that the familiar exponent rules for real numbers hold:\nf^if^j=f^i+j and (f^i)^j=f^i· j.",
+    "Then where f is invertible,\nwriting f^-1 for the inverse\nand f^-2 for the inverse of f^2, etc., gives that\nthese familiar exponent rules continue to hold, since we define\nf^0 to be the identity map.",
+    "The definition of function requires that for every \ninput there is one and only one associated output value.",
+    "If a function f DC has the additional property that for every\noutput value there is at least one associated input valuethat is, \nthe additional property that\nf's codomain equals its range C=fthen \nthe function is\nonto.",
+    "< g r a p h i c s >\n\n\n\nA function has a right inverse if and only if it is onto.",
+    "(The f pictured above has a right inverse g CD given by\nfollowing the arrows backwards, from right to left.",
+    "For the codomain point on the top, choose either one of the arrows to follow.",
+    "With that, applying g first followed by f takes elements\ny∈ C to themselves, and so is the identity function.)\n\nIf a \nfunction f DC has the property that for every\noutput value there is at most one associated input valuethat is, \nif no two arguments share an image so that\nf(x_1)=f(x_2) implies  that x_1 = x_2then \nthe function is\none-to-one.",
+    "The bean diagram from earlier illustrates.",
+    "< g r a p h i c s >\n\n\n\nA function has a left inverse if and only if it is one-to-one.",
+    "(In the picture define g CD to follow the arrows backwards for\nthose y∈ C that are at the end of an arrow, and to send the point\nto an arbitrary element in D otherwise.",
+    "Then applying f followed by g to elements of D will act as the \nidentity.)\n\nBy the prior paragraphs, a map has a two-sided inverse \nif and only if that map is both onto and one-to-one.",
+    "Such a function is a \ncorrespondence.",
+    "It associates one and only one element of the domain with each element of the\ncodomain.",
+    "Because a composition of one-to-one maps is one-to-one, and a composition\nof onto maps is onto, a composition of correspondences is a\ncorrespondence.",
+    "We sometimes want to shrink the domain of a function.",
+    "For instance, we may take the function f given by\nf(x)=x^2 and, in order to have an inverse, limit input arguments to\nnonnegative reals f̂^+0.",
+    "Then f̂ is \nthe restriction of\nf to the smaller domain.",
+    "Relations\n\nSome familiar mathematical things, such as `<' or `=',\nare most naturally understood as relations between things.",
+    "A binary relation on a set A is\na set of ordered pairs of elements of A.",
+    "For example, some elements of the set that is the\nrelation `<' on the integers are\n(3,5), (3,7), and (1,100).",
+    "Another binary relation on the integers is equality; this relation is\nthe set\n…, (-1,1), (0,0),(1,1),….",
+    "Still another example is `closer than 10', the set\n(x,y) |x-y|<10.",
+    "Some members of this relation are (1,10), (10,1),\nand (42,44).",
+    "Neither (11,1) nor (1,11) is a member.",
+    "Those examples illustrate the generality of the definition.",
+    "All kinds of relationships (e.g., `both numbers\neven' or `first number is the second with the digits reversed')\nare covered.",
+    "Equivalence Relations\n\nWe shall need to express that two objects are alike in some way.",
+    "They aren't identical, but they are related\n(e.g., two integers that give the same remainder when divided by 2).",
+    "A binary relation (a,b),…\nis an \nequivalence relation \nwhen it satisfies\n(1) reflexivity: \n     any object is related to itself,\n(2) symmetry: \n     if a is related to b then\n     b is related to a, and\n(3) transitivity:\n     if a is related to b and b is\n     related to c then a is related to c.",
+    "Some examples (on the integers): `=' is an equivalence relation,\n`<' does not satisfy symmetry,\n`same sign' is a equivalence, while `nearer than 10' fails transitivity.",
+    "Partitions\n\nIn the `same sign' relation (1,3),(-5,-7),(0,0),…\nthere are three kinds of pairs, pairs with both numbers positive,\npairs with both negative, and the one pair with both zero.",
+    "So integers fall into exactly one of three classes, positive, or negative,\nor zero.",
+    "A partition \nof a set Ω is a collection of subsets\nS_0,S_1,S_2,… such that\nevery element of S is an element of a subset\nS_1 S_2⋯ = Ω and overlapping parts are equal:\nif S_i S_j≠∅ then S_i=S_j.",
+    "Picture that Ω is decomposed into non-overlapping parts.",
+    "< g r a p h i c s >\n\n\n\nThus the prior paragraph says that `same sign' partitions\nthe integers into the set of positives, the set of negatives, and \nthe set containing only zero.",
+    "Similarly, the equivalence relation `=' partitions the integers into\none-element sets.",
+    "Another example is the set of strings consisting of a number, followed\nby a slash,\nfollowed by a nonzero number\nΩ=n/dn,d∈ and d≠ 0.",
+    "Define S_n,d by: n̂/d̂∈ S_n,d if \nn̂d=nd̂.",
+    "Checking that this is a partition of Ω is routine\n(observe for instance that S_4,3=S_8,6).",
+    "This shows some parts, listing in each a couple of its infinitely many members.",
+    "< g r a p h i c s >\n\n\n\n\nEvery equivalence relation induces a partition, and every \npartition is induced by an equivalence.",
+    "(This is routine to check.)\nBelow are two examples.",
+    "Consider the equivalence relationship between two integers of \n`gives the same remainder when divided by 2',\nthe set P= (-1,3),(2,4),(0,0),….",
+    "In the set P are two kinds of pairs, the pairs with both members even\nand the pairs with both members odd.",
+    "This equivalence induces a partition where the parts are found by: \nfor each x we define the set of numbers related to\nit S_x=y (x,y)∈ P.",
+    "The parts are\n…,-3,-1,1,3,… and\n…,-2,0,2,4,….",
+    "Each part can be named in many ways; for instance,\n…,-3,-1,1,3,… is S_1 and also is S_-3.",
+    "Now consider the partition of the natural numbers where\ntwo numbers are in the same part if they leave the same remainder when\ndivided by 10, that is, if they have the same least significant digit.",
+    "This partition is induced by the equivalence relation R defined by:\ntwo numbers n, m are related if they are together in the same part.",
+    "For example, 3 is related to 33, but 3 is not related to 102.",
+    "Verifying the three conditions in the definition of equivalence are \nstraightforward.",
+    "We call each part of a partition an equivalence class.",
+    "We sometimes pick a single element of each equivalence class to be the \nclass representative.",
+    "< g r a p h i c s >\n\n\n\nUsually when we pick representatives we have some natural scheme in mind.",
+    "In that case we call them the\ncanonical representatives.",
+    "An example is that\ntwo fractions 3/5 and 9/15 are equivalent.",
+    "In everyday work we often prefer to use the `simplest form' or `reduced form'\nfraction 3/5 as the class representative.",
+    "< g r a p h i c s >"
+  ],
+  "math_concepts": [
+    {
+      "type": "Theorem",
+      "raw_context": "\\definend{Theorem} %  \nfor major points,\na \\definend{Corollary} %   \nfor results that follow immediately from\na prior one, or a\n\\definend{Lemma} % \nfor results chiefly used to prove others.\n\nStatement"
+    },
+    {
+      "type": "Corollary",
+      "raw_context": "\\definend{Corollary} %   \nfor results that follow immediately from\na prior one, or a\n\\definend{Lemma} % \nfor results chiefly used to prove others.\n\nStatements can be complex and have many parts.\nThe t"
+    },
+    {
+      "type": "Lemma",
+      "raw_context": "\\definend{Lemma} % \nfor results chiefly used to prove others.\n\nStatements can be complex and have many parts.\nThe truth or falsity of the entire statement depends both on the\ntruth value of the parts"
+    },
+    {
+      "type": "vacuously true",
+      "raw_context": "\\definend{vacuously true}.)\nAlso observe that `if \\( P \\) then \\( Q \\)' is true when $Q$ is true: \n`if $4$ is prime then $7$ is prime' and \n`if $4$ is not prime then $7$ is prime' are both true.\n\n% (W"
+    },
+    {
+      "type": "contrapositive",
+      "raw_context": "\\definend{contrapositive}\nstatement: `if \\( Q \\) is false then \\( P \\) is false'\n(rephrased, `\\( Q \\) can only be false when \\( P \\) is also false').\nThus to show `if a natural number is prime then it"
+    },
+    {
+      "type": "quantifiers",
+      "raw_context": "\\definend{quantifiers}.\n\n\\startword{For all}\nThe `for all' prefix is the \n\\definend{universal quantifier}, \nsymbolized \\( \\forall \\).\n\nThe most straightforward way to prove that \na statement holds in"
+    },
+    {
+      "type": "universal quantifier",
+      "raw_context": "\\definend{universal quantifier}, \nsymbolized \\( \\forall \\).\n\nThe most straightforward way to prove that \na statement holds in all cases is to \nprove that it holds in each case.\nThus to show that `ever"
+    },
+    {
+      "type": "typical element",
+      "raw_context": "\\definend{typical element} proof.\n(In this kind of argument be careful not to assume \nproperties for that element\nother than the ones in the hypothesis.\nThis argument is wrong:\n``If \\( n \\) is divisib"
+    },
+    {
+      "type": "existential quantifier",
+      "raw_context": "\\definend{existential quantifier},\nsymbolized \n\\( \\exists \\).\n\n%This quantifier is in some ways the opposite of `for all'.\n%For instance, contrast these two definitions of primality\n%of an integer \\("
+    },
+    {
+      "type": "mathematical induction",
+      "raw_context": "\\definend{mathematical induction}.\nWe will see two examples.\n\nWe will first prove that \\( 1+2+3+\\dots+n=n(n+1)/2 \\). \nThat formula has a natural number variable $n$\nthat is free, meaning that setting"
+    },
+    {
+      "type": "base step",
+      "raw_context": "\\definend{base step}\nwe show that the statement holds for\nsome intial number $i\\in \\N$. \nOften this step is a routine verification.\nThe second step, \nthe \\definend{inductive step},\nis more subtle; we"
+    },
+    {
+      "type": "inductive step",
+      "raw_context": "\\definend{inductive step},\nis more subtle; we will show that this implication holds:\n\\begin{equation*}\n  \\begin{tabular}{l}\n    \\text{If the statement holds from $n=i$ up to and including~$n=k$}"
+    },
+    {
+      "type": "inductive hypothesis",
+      "raw_context": "\\definend{inductive hypothesis}).\nCompleting both steps proves that the statement is\ntrue for all natural numbers greater than or equal to $i$.\n\nFor the sum of the initial $n$~numbers statement  \nthe"
+    },
+    {
+      "type": "set",
+      "raw_context": "\\definend{set}. \nSets are characterized by the Principle of Extensionality: \ntwo sets with the same elements are equal. \nBecause of this, the order of the elements does not matter \n\\( \\set{2,\\pi}=\\set"
+    },
+    {
+      "type": "element",
+      "raw_context": "\\definend{element}, \nor \\definend{member},) of a set we\nuse `\\(\\in \\)',\nso that \\( 7\\in\\set{3,5,7} \\) while \\( 8\\not\\in\\set{3,5,7} \\).\n\nWe say that \\( A \\) is a \\definend{subset} of \\( B \\), written\n$"
+    },
+    {
+      "type": "member",
+      "raw_context": "\\definend{member},) of a set we\nuse `\\(\\in \\)',\nso that \\( 7\\in\\set{3,5,7} \\) while \\( 8\\not\\in\\set{3,5,7} \\).\n\nWe say that \\( A \\) is a \\definend{subset} of \\( B \\), written\n$A\\subseteq B$, when $x\\i"
+    },
+    {
+      "type": "subset",
+      "raw_context": "\\definend{subset} of \\( B \\), written\n$A\\subseteq B$, when $x\\in A$ implies that $x\\in B$.\nIn this book we use\n`\\( \\subset \\)' for the \\definend{proper subset} %\nrelationship that \\( A \\) is a subset"
+    },
+    {
+      "type": "proper subset",
+      "raw_context": "\\definend{proper subset} %\nrelationship that \\( A \\) is a subset of \\( B \\) but \\( A\\neq B \\)\n(some authors use this symbol for any kind of subset, proper or not).\nAn example is \n\\( \\set{2,\\pi}\\subset"
+    },
+    {
+      "type": "empty set",
+      "raw_context": "\\definend{empty set} \\( \\set{} \\),\nsymbolized \\( \\emptyset \\).\nAny set has the empty set for a subset by the `vacuously true'\nproperty of the definition of implication.\n\n\n\n\n\\startword{Diagrams}\nWe pic"
+    },
+    {
+      "type": "Venn diagram",
+      "raw_context": "\\definend{Venn diagram}.\nThis shows \\( x\\in P \\). \n\\begin{center}\n  \\includegraphics{appen/mp/appen.8}\n\\end{center}\nThe outer rectangle contains the universe $\\Omega$ of all objects under \ndiscussion."
+    },
+    {
+      "type": "union",
+      "raw_context": "\\definend{union} of two sets is\n\\( P\\union Q=\\set{x\\suchthat \\text{$(x\\in P)$ or $(x\\in Q)$}} \\).\nThe diagram shows that an element is in the union if it is in either of the\nsets.\n\\begin{center}\n  \\in"
+    },
+    {
+      "type": "intersection",
+      "raw_context": "\\definend{intersection} is\n\\( P\\intersection Q=\\set{x\\suchthat \\text{$(x\\in P)$ and $(x\\in Q)$}} \\).\n\\begin{center}\n  \\includegraphics{appen/mp/appen.2}\n\\end{center}\nThe \n\\definend{complement} \nof a s"
+    },
+    {
+      "type": "complement",
+      "raw_context": "\\definend{complement} \nof a set~\\( P \\) is\n\\( P^{\\text{comp}}=\\set{x\\in\\Omega\\suchthat x\\not\\in P} \\)\n\\begin{center}\n  \\includegraphics{appen/mp/appen.1}\n\\end{center}\n\n\n\n\n\\startword{Multisets}\nAs desc"
+    },
+    {
+      "type": "multiset",
+      "raw_context": "\\definend{multiset}.\n(Note that we use the same \ncurly brackets notation  $\\set{\\ldots}$ as for sets.)\nThus the multiset $\\set{1,2,2}$ differs from the multiset\n$\\set{1,2}$.\nBecause order does not mat"
+    },
+    {
+      "type": "sequences",
+      "raw_context": "\\definend{sequences}, denoted with angle brackets:\n\\( \\sequence{ 2,3,7}\\neq\\sequence{2,7,3} \\).\nA sequence of length \\( 2 \\) is an \n\\definend{ordered pair},\nand is often written with parentheses: \\( ("
+    },
+    {
+      "type": "ordered pair",
+      "raw_context": "\\definend{ordered pair},\nand is often written with parentheses: \\( (\\pi,3) \\).\nWe also sometimes say `ordered triple', `ordered \\( 4 \\)-tuple', etc.\nThe set of ordered \\( n \\)-tuples of elements of a"
+    },
+    {
+      "type": "function",
+      "raw_context": "\\definend{function}\nor \\definend{map}  $\\map{f}{D}{C}$ is \nis an association between input\n\\definend{arguments} \n$x\\in D$\nand output\n\\definend{values},\n$f(x)\\in C$ subject to the requirement \nthat the"
+    },
+    {
+      "type": "map",
+      "raw_context": "\\definend{map}  $\\map{f}{D}{C}$ is \nis an association between input\n\\definend{arguments} \n$x\\in D$\nand output\n\\definend{values},\n$f(x)\\in C$ subject to the requirement \nthat the\nfunction must be \\defi"
+    },
+    {
+      "type": "arguments",
+      "raw_context": "\\definend{arguments} \n$x\\in D$\nand output\n\\definend{values},\n$f(x)\\in C$ subject to the requirement \nthat the\nfunction must be \\definend{well-defined},%\n\nthat \\( x \\) suffices to determine \\( f(x) \\)."
+    },
+    {
+      "type": "values",
+      "raw_context": "\\definend{values},\n$f(x)\\in C$ subject to the requirement \nthat the\nfunction must be \\definend{well-defined},%\n\nthat \\( x \\) suffices to determine \\( f(x) \\).\nRestated, the condition is that\nif \\( x_1"
+    },
+    {
+      "type": "well-defined",
+      "raw_context": "\\definend{well-defined},%\n\nthat \\( x \\) suffices to determine \\( f(x) \\).\nRestated, the condition is that\nif \\( x_1=x_2 \\) then \\( f(x_1)=f(x_2) \\).\n\nThe set of all arguments~$D$ is \\( f \\)'s \n\\define"
+    },
+    {
+      "type": "domain",
+      "raw_context": "\\definend{domain}\nand the set of output values is its \n\\definend{range} $\\rangespace{f}$.\nOften we don't work with the range and instead\nwork with a convenient superset, the\n\\definend{codomain}~$C$.\nF"
+    },
+    {
+      "type": "range",
+      "raw_context": "\\definend{range} $\\rangespace{f}$.\nOften we don't work with the range and instead\nwork with a convenient superset, the\n\\definend{codomain}~$C$.\nFor instance, we might describe the squaring function wi"
+    },
+    {
+      "type": "codomain",
+      "raw_context": "\\definend{codomain}~$C$.\nFor instance, we might describe the squaring function with $\\map{s}{\\R}{\\R}$\ninstead of $\\map{s}{\\R}{\\R^+\\union \\set{0}}$.\n\nWe picture functions with a \n\\definend{bean diagram"
+    },
+    {
+      "type": "bean diagram",
+      "raw_context": "\\definend{bean diagram}.\n\\begin{center}\n  \\includegraphics{appen/mp/appen.9}\n\\end{center}\nThe blob on the left is the domain while on the right is the\ncodomain.\nThe function associates the three point"
+    },
+    {
+      "type": "image",
+      "raw_context": "\\definend{image} \nof \\( x \\)'.\n\nA map such as \\( x\\mapsto \\sin(1/x) \\) is a\ncombinations of simpler maps, here\n\\( g(y)=\\sin(y) \\) applied to the image of \\( f(x)=1/x \\).\nThe \\definend{composition} \nof"
+    },
+    {
+      "type": "composition",
+      "raw_context": "\\definend{composition} \nof \\( \\map{g}{Y}{Z} \\) with \\( \\map{f}{X}{Y} \\),\nis the map sending\n\\( x\\in X \\) to \\( g(\\, f(x)\\,)\\in Z \\).\nIt is denoted \\( \\map{\\composed{g}{f}}{X}{Z} \\).\nThis definition on"
+    },
+    {
+      "type": "identity map",
+      "raw_context": "\\definend{identity map} \n\\( \\map{\\identity}{Y}{Y} \\) defined by\n\\( \\identity(y)=y \\) has the property that for any \\( \\map{f}{X}{Y} \\),\nthe composition \\( \\composed{\\identity}{f} \\) is equal to \\( f \\"
+    },
+    {
+      "type": "left inverse",
+      "raw_context": "\\definend{left inverse} of a map \n\\( \\map{f}{X}{Y} \\) to be a\nfunction \\( \\map{g}{\\text{range}(f)}{X} \\) such that \\( \\composed{g}{f} \\)\nis the identity map on \\( X \\).\nA \\definend{right inverse} \nof"
+    },
+    {
+      "type": "right inverse",
+      "raw_context": "\\definend{right inverse} \nof \\( f \\) is a\n\\( \\map{h}{Y}{X} \\) such that \\( \\composed{f}{h} \\) is the identity.\n\nFor some $f$'s there is a map that is \nboth a left and right inverse of \\( f \\).\nIf such"
+    },
+    {
+      "type": "two-sided inverse",
+      "raw_context": "\\definend{two-sided inverse} or just  \n\\definend{``the'' inverse},\nand denote it \\( f^{-1} \\). \nFor instance, the inverse of the function \\( \\map{f}{\\Re}{\\Re} \\)\ngiven by \\( f(x)=2x-3 \\) is the functi"
+    },
+    {
+      "type": "``the'' inverse",
+      "raw_context": "\\definend{``the'' inverse},\nand denote it \\( f^{-1} \\). \nFor instance, the inverse of the function \\( \\map{f}{\\Re}{\\Re} \\)\ngiven by \\( f(x)=2x-3 \\) is the function \\( \\map{f^{-1}}{\\Re}{\\Re} \\)\ngiven b"
+    },
+    {
+      "type": "onto",
+      "raw_context": "\\definend{onto}.\n\\begin{center}\n  \\includegraphics{appen/mp/appen.14}\n\\end{center}\nA function has a right inverse if and only if it is onto. \n(The $f$ pictured above has a right inverse $\\map{g}{C}{D}"
+    },
+    {
+      "type": "one-to-one",
+      "raw_context": "\\definend{one-to-one}.\nThe bean diagram from earlier illustrates.\n\\begin{center}\n  \\includegraphics{appen/mp/appen.9}\n\\end{center}\nA function has a left inverse if and only if it is one-to-one.\n(In th"
+    },
+    {
+      "type": "correspondence",
+      "raw_context": "\\definend{correspondence}.\nIt associates one and only one element of the domain with each element of the\ncodomain.\nBecause a composition of one-to-one maps is one-to-one, and a composition\nof onto map"
+    },
+    {
+      "type": "restriction",
+      "raw_context": "\\definend{restriction} of\n\\( f \\) to the smaller domain.\n\n\n\n\n\n\n\n\n\\startword{Relations}\n\nSome familiar mathematical things, such as `\\( < \\)' or `\\( = \\)',\nare most naturally understood as relations be"
+    },
+    {
+      "type": "binary relation",
+      "raw_context": "\\definend{binary relation} on a set \\( A \\) is\na set of ordered pairs of elements of \\( A \\).\nFor example, some elements of the set that is the\nrelation `$<$' on the integers are\n\\( (3,5) \\), \\( (3,7)"
+    },
+    {
+      "type": "equivalence relation",
+      "raw_context": "\\definend{equivalence relation} \nwhen it satisfies\n(1)~\\definend{reflexivity}: \n     any object is related to itself,\n(2)~\\definend{symmetry}: \n     if \\( a \\) is related to \\( b \\) then\n     \\( b \\)"
+    },
+    {
+      "type": "reflexivity",
+      "raw_context": "\\definend{reflexivity}: \n     any object is related to itself,\n(2)~\\definend{symmetry}: \n     if \\( a \\) is related to \\( b \\) then\n     \\( b \\) is related to \\( a \\), and\n(3)~\\definend{transitivity}:"
+    },
+    {
+      "type": "symmetry",
+      "raw_context": "\\definend{symmetry}: \n     if \\( a \\) is related to \\( b \\) then\n     \\( b \\) is related to \\( a \\), and\n(3)~\\definend{transitivity}:\n     if \\( a \\) is related to \\( b \\) and \\( b \\) is\n     related"
+    },
+    {
+      "type": "transitivity",
+      "raw_context": "\\definend{transitivity}:\n     if \\( a \\) is related to \\( b \\) and \\( b \\) is\n     related to \\( c \\) then \\( a \\) is related to \\( c \\).\nSome examples (on the integers): `\\( = \\)' is an equivalence r"
+    },
+    {
+      "type": "partition",
+      "raw_context": "\\definend{partition} \nof a set \\( \\Omega \\) is a collection of subsets\n\\( \\set{S_0,S_1,S_2,\\ldots} \\) such that\nevery element of \\( S \\) is an element of a subset\n\\( S_1\\union S_2\\union \\cdots{} = \\Om"
+    },
+    {
+      "type": "equivalence class",
+      "raw_context": "\\definend{equivalence class}.%\n\nWe sometimes pick a single element of each equivalence class to be the \n\\definend{class representative}.%\n\n\\begin{center}\n  \\includegraphics{appen/mp/appen.13}\n\\end{cen"
+    },
+    {
+      "type": "class representative",
+      "raw_context": "\\definend{class representative}.%\n\n\\begin{center}\n  \\includegraphics{appen/mp/appen.13}\n\\end{center}\nUsually when we pick representatives we have some natural scheme in mind.\nIn that case we call them"
+    },
+    {
+      "type": "canonical",
+      "raw_context": "\\definend{canonical} representatives.%\n%\n%\n\nAn example is that\ntwo fractions \\( 3/5 \\) and \\( 9/15 \\) are equivalent.\nIn everyday work we often prefer to use the `simplest form' or `reduced form'\nfrac"
+    }
+  ]
+}

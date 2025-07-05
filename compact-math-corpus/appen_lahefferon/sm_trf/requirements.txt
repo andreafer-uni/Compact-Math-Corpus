@@ -1,0 +1,6 @@
+spacy
+spacy-transformers
+tqdm
+pandas
+matplotlib
+numpy

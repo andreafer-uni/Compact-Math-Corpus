@@ -1,0 +1,9 @@
+Metric,Value
+Total Tokens,5730
+Total Sentences,236
+Unique Words,683
+Average Sentence Length,24.279661016949152
+Average Word Length,4.114567526555387
+POS Frequencies,"{'PROPN': 308, 'SPACE': 404, 'AUX': 316, 'VERB': 384, 'ADP': 435, 'NOUN': 942, 'PUNCT': 866, 'PRON': 206, 'PART': 83, 'ADJ': 311, 'DET': 520, 'CCONJ': 170, 'ADV': 185, 'X': 42, 'NUM': 324, 'SCONJ': 201, 'SYM': 33}"
+Dependency Frequencies,"{'compound': 178, 'dep': 442, 'nsubjpass': 30, 'auxpass': 32, 'ROOT': 236, 'prep': 429, 'pobj': 411, 'punct': 902, 'amod': 203, 'parataxis': 4, 'nsubj': 389, 'relcl': 34, 'neg': 35, 'attr': 118, 'det': 518, 'dobj': 188, 'cc': 159, 'conj': 203, 'nummod': 85, 'advmod': 213, 'acl': 27, 'acomp': 107, 'appos': 118, 'oprd': 6, 'aux': 94, 'xcomp': 20, 'pcomp': 16, 'advcl': 103, 'mark': 157, 'csubj': 9, 'ccomp': 111, 'nmod': 45, 'npadvmod': 34, 'poss': 10, 'expl': 19, 'preconj': 7, 'intj': 4, 'quantmod': 5, 'meta': 10, 'dative': 1, 'prt': 2, 'agent': 13, 'predet': 2, 'case': 1}"
+Top Informative Terms,"[('p', 43), ('number', 33), ('set', 33), ('prime', 27), ('true', 26), ('statement', 22), ('function', 22), ('numbers', 16), ('prove', 15), ('use', 14), ('false', 14), ('inverse', 14), ('holds', 13), ('divisible', 13), ('primes', 13), ('sets', 13), ('natural', 12), ('r', 12), ('step', 12), ('map', 12)]"
