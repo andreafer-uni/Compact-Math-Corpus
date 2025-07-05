@@ -1,0 +1,4 @@
+spacy
+tqdm
+pandas
+spacy_conll
