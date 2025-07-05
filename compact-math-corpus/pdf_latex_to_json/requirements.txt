@@ -1,0 +1,3 @@
+spacy
+pymupdf
+pylatexenc
