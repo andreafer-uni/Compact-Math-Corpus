@@ -94,8 +94,9 @@ If you use this corpus or pipeline, please cite:
 
 - Python 3.10+
 - `spaCy`, `spacy-conll`, `tqdm`, `pandas`
-- `PyMuPDF` or `pdfminer` (for PDF extraction)
-- `LaTeX2e` tools (for .tex parsing, optional)
+- `PyMuPDF`, `Pylatexenc`
+- `scikit-learn`
+- `numpy`, `matplotlib`, `seaborn`
 
 See `requirements.txt` in each pipeline folder.
 
@@ -103,8 +104,8 @@ See `requirements.txt` in each pipeline folder.
 
 ## Status
 
-✅ Modular  
-✅ Fully reproducible  
-✅ Aligned with Universal Dependencies  
-✅ Tested on multiple math textbooks  
-✅ Model ready for downstream applications
+- Modular  
+- Fully reproducible  
+- Aligned with Universal Dependencies  
+- Tested on multiple math textbooks  
+- Model ready for downstream applications
