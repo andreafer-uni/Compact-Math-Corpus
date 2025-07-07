@@ -41,7 +41,7 @@ compact-math-corpus/
 
 ## Usage
 
-Each pipeline folder contains its own `main.py`, which orchestrates modular scripts in subfolders like `cleaning/`, `stats/`, `annotation/`, and `extract/`.
+Each pipeline folder contains its own `main.py`, which coordinates modular scripts in subfolders like `cleaning/`, `stats/`, `annotation/`, and `extract/`.
 
 Example:
 ```bash
