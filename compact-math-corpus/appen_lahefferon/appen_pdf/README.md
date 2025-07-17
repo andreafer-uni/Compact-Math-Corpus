@@ -13,10 +13,10 @@ It was used for comparing PDF and TeX, as well as spaCy Small and Transformer mo
 ## Structure
 
 - `text_processing.py` — extract and clean the appendix
-- `stats_generator.py` — compute linguistic statistics
 - `conll_converter.py` — convert to CoNLL format
-- `compound_extractor.py` — extract compound phrases
+- `compound_extractor.py` — extract compound expressions
 - `token_checker.py` — find anomalous tokens
+- `stats_generator.py` — compute linguistic statistics
 - `main.py` — handles the full workflow
 
 ## Setup
