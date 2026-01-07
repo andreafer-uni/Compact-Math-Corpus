@@ -2,8 +2,10 @@
 
 The **Compact Math Corpus (CMC)** is a modular and extensible pipeline designed to extract, clean, annotate, and analyze mathematical textbook content in PDF format. It aims to produce a linguistically annotated corpora for downstream NLP applications such as syntactic analysis, compound extraction, and language modeling.
 
-This repository is based on the work presented in the paper _"Building a Compact Math Corpus."_ by Andréa Ferreira 
-→ *[Link to paper IN PROGRESS]*
+This repository is based on the work presented in:
+
+> Andrea Ferreira. 2025. *Building a Compact Math Corpus*. In *Proceedings of the 5th Workshop on Natural Logic Meets Machine Learning (NALOMA)*, pages 48–55, Bochum, Germany. Association for Computational Linguistics.
+→ [ACL Anthology](https://aclanthology.org/2025.naloma-1.5/) | [PDF](https://aclanthology.org/2025.naloma-1.5.pdf)
 
 It supports multiple math textbooks and integrates multiple pipelines with output in formats such as CoNLL, CSV, JSON, TSV, and trained model artifacts.
 
@@ -85,9 +87,25 @@ Final models are trained using the unified CMC dataset and include:
 
 If you use this corpus or pipeline, please cite:
 
-> Building a Compact Math Corpus for Compound and Syntax Analysis  
-> [Andrea Ferreira], 2025.  ##### BIBTEX IN PROGRESS
+Andrea Ferreira. 2025. *Building a Compact Math Corpus*. In *Proceedings of the 5th Workshop on Natural Logic Meets Machine Learning (NALOMA)*, pages 48–55, Bochum, Germany. Association for Computational Linguistics.  
+https://aclanthology.org/2025.naloma-1.5/
 
+  ```bibtex
+  @inproceedings{ferreira-2025-building,
+      title = "Building a Compact Math Corpus",
+      author = "Ferreira, Andrea",
+      editor = "Abzianidze, Lasha  and
+        de Paiva, Valeria",
+      booktitle = "Proceedings of the 5th Workshop on Natural Logic Meets Machine Learning (NALOMA)",
+      month = aug,
+      year = "2025",
+      address = "Bochum, Germany",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2025.naloma-1.5/",
+      pages = "48--55",
+      ISBN = "979-8-89176-287-9"
+}
+   ```
 ---
 
 ## Dependencies
@@ -109,3 +127,7 @@ See `requirements.txt` in each pipeline folder.
 - Aligned with Universal Dependencies  
 - Tested on multiple math textbooks  
 - Model ready for downstream applications
+
+---
+
+
